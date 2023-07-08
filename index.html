@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MySQL Data</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for customers in rows { %>
+        <tr>
+          <td><%= customer.name %></td>
+          <td><%= customer.address %></td>
+          <td><%= customer.id %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</body>
+</html>
